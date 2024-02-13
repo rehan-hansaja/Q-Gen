@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  box-sizing: border-box;
+}
+/* body {
+  
+  background-color: #13072e;
+}
+form{
+  display:block ;
+  box-shadow:1px 1px 3px 2px #d2c4ef ;
+  margin-left: 100px;
+  margin: 40px auto;
+  max-width: 600px;
+  max-height: 700px;
+  padding: 20px;
+
+}
+form input,textarea{
+  color: #ddd;
+  display:flex ;
+  flex-direction: column;
+  width: 100%;
+  margin:10px auto;
+  padding: 10px;
+  font-family:sans-serif;
+  border-color: aliceblue;
+}
+textarea{
+  background-color: #301277;
+  font-size: larger;
+
+}
+form span{
+  color:aqua ;
+}
+form button{
+  width: 80px;
+}
+form input:hover{
+  border:1px solid ghostwhite;
+}
+.but:hover{
+  color:black;
+  background-color:#ddd;
+}
+.card-container1{
+  float: left;
+  width: 250px;
+  height: 280px;
+  overflow:visible;
+  box-shadow: 0px 0px 15px -5px;
+  transition:0.3s ;
+  animation:ease-in ;
+  margin-left: 50px;
+  margin-right: auto;
+  display:flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+.card-container1:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px 0px;
+}
+.image-container img{
+  overflow: hidden;
+  height: 100px;
+  width: 250px;
+}
+.card-container2{
+  float: right;
+  width: 250px;
+  height: 280px;
+ 
+  box-shadow: 0px 0px 15px -5px;
+  transition:0.3s ;
+  animation:ease-in ;
+  margin-right: 50px;
+  display:flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+.card-container2:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px 0px;
+}
+.icons{
+  margin-left: 50px;
+
+}
+.p2{
+  margin-left: 60px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.p1{
+  margin-left: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+
+
