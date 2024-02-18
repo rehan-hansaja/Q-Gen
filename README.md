@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# AI Quiz Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uses OpenAI's ChatGPT API to generate multiple choice quiz with user defined language, topic, and difficulty.
 
-## Available Scripts
+Features a loading screen with random facts to give the user something to do while the data is retrieved from the API and an ending screen with score-determined gifs and sarcastic messages.
 
-In the project directory, you can run:
+[View Live App](https://ai-quiz-generator-next.vercel.app/)
 
-### `npm start`
+![home page](./docs/images/home-page.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+- Customisable language, topic, difficulty, and number of questions
+- Loading screen that displays the live response stream and random webdev/programming facts (gives you something to do as it can take around 20-30 seconds for the quiz to generate)
+- Multiple choice Ed-style quiz with explanations and a progress bar
+- End screen with gifs, sarcastic messages, and confetti (>= 80%) that adapt to your quiz score
+- 14 track kahoot-flavored audio player (this is the real highlight, the quiz is just something to do while you're groovin :grin:)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Used
 
-### `npm test`
+- Next.js 13.4 (using the new App router)
+- Tailwind CSS
+- OpenAI's `gpt-3-turbo` API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Packages Used
+- [framer-motion](https://www.framer.com/motion/) (for animations)
+- [highlight.js](https://www.npmjs.com/package/highlight.js) (for syntax highlighting)
+- [react-confetti](https://www.npmjs.com/package/react-confetti)
+- [react-loader-spinner](https://www.npmjs.com/package/react-loader-spinner)
+- [react-icons](https://react-icons.github.io/react-icons/)
+- [react-use](https://github.com/streamich/react-use) (for the `useAudio()` hook)
+- [react-simple-typewriter](https://www.npmjs.com/package/react-simple-typewriter)
 
-### `npm run build`
+## Tools ##
+- `create-next-app` (development and building)
+- Vercel (deployment)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## OpenAI Integration
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A custom prompt is created by interpolating user entered form data. Crucially, the response is asked to be returned in JSON format. Light "prompt engineering" was required to ensure the response was consistently in the correct format (for example: explicitly saying what the names of the keys should be).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![prompt](./docs/images/prompt.jpg)
 
-### `npm run eject`
+The API is queried. After playing with the available parameters, I found leaving most of them at their default setting worked well.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![api request](./docs/images/api-request.jpg)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![loading screen](./docs/images/loading-screen.jpg)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![quiz screen](./docs/images/quiz-screen.jpg)
+
+![end-screen](./docs/images/end-screen.jpg)
+
+<!-- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To learn more about Next.js, take a look at the following resources:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Code Splitting
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Deploy on Vercel
 
-### Analyzing the Bundle Size
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js. -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
