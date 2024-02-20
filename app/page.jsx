@@ -44,8 +44,14 @@ const HomePage = () => {
                     
                 </h1>
                 <h1 className='text-center text-5xl md:text-7xl font-bold text-green-500'>
-                    Q-GEN MCQ Quiz Generator
+                    Q-GEN 
                 </h1>
+                <h1 className='text-center text-5xl md:text-6xl font-bold text-green-500'>
+                    MCQ Quiz Generator
+                </h1>
+                <h4 className='text-center text-4xl md:text-4xl font-bold text-green-700'>
+                    for IT students
+                </h4>
 
 
                 {/* <form onSubmit={handleSubmit} className='mt-8 grid grid-cols-[2fr_3fr]'> */}
@@ -168,14 +174,14 @@ const HomePage = () => {
                 </form>
             </div>
 
-<a
+{/* <a
     className='fixed bottom-0 flex items-center gap-2 pb-2 font-mono text-sm text-white transition hover:text-emerald-300 sm:m-0'
     href='https://github.com/rehan-hansaja/Q-Gen'
     target='_blank'
 >
     <FiGithub size={16} />
     Built by TEAM INVICTUS
-</a>
+</a> */}
 
         </div>
     )
