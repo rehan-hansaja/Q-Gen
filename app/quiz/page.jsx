@@ -9,8 +9,6 @@ import { motion, useSpring } from 'framer-motion'
 import LoadingScreen from '../components/LoadingScreen'
 import Question from '../components/Question'
 
-import { testQuiz } from '../constants/testQuiz'
-
 import 'highlight.js/styles/atom-one-dark.css'
 import hljs from 'highlight.js'
 
@@ -133,18 +131,12 @@ const QuizPage = () => {
             </div> */}
 
             <motion.div className='progress-bar' style={{ scaleX }} />
-
-            {/* <h1 className='pt-12 text-3xl font-semibold text-center'>
-                Quiz Page
-            </h1> */}
             {isLoading ? (
                 <>
                     <LoadingScreen responseStream={responseStream} />
                 </>
             ) : (
                 <div className='pt-12'>
-                    {/* <button onClick={() => console.log(JSON.parse(stuff.replace(/\n/g, ''))) }>Show stuff</button>
-                    <button onClick={() => console.log('asdf') }>Show asdf</button> */}
                     {quiz?.map((question, index) => (
                         // <div>{question.query}</div>
                         <div className='mb-12' key={index}>

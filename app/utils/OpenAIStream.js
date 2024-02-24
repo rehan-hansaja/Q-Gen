@@ -3,13 +3,8 @@
 import { createParser } from 'eventsource-parser'
 
 export async function OpenAIStream(payload) {
-
-	// console.log(payload)
-
     const encoder = new TextEncoder() // string to binary
     const decoder = new TextDecoder() // binary to string
-
-    // let counter = 0
 
     const res = await fetch('https://api.openai.com/v1/chat/completions', {
         headers: {
@@ -37,8 +32,6 @@ export async function OpenAIStream(payload) {
                         return
                     }
                     try {
-						// console.log(data) // log every single token
-
                         const json = JSON.parse(data)
                         const text = json.choices[0].delta.content // get actual text token from chunk
                         // if (counter < 2 && (text.match(/\n/) || []).length) {

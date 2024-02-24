@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react'
 import { HiCheck, HiOutlineXMark } from 'react-icons/hi2'
 
 const Question = ({ question, id, setNumSubmitted, setNumCorrect }) => {
-    // const Question = ({ question, choices, explanation, answer }: QuestionProps) => {
-    // const Question: React.FC<QuestionProps> = ({ question, choices, explanation, answer }: QuestionProps) => {
 
     const { query, choices, answer, explanation } = question
     const [isSubmitted, setIsSubmitted] = useState(false)
@@ -11,8 +9,6 @@ const Question = ({ question, id, setNumSubmitted, setNumCorrect }) => {
     const [isSelected, setIsSelected] = useState(false)
     const [selectedChoiceIndex, setSelectedChoiceIndex] = useState(-1)
 
-    // Probably not the best way to do this.
-    // Should just make function to test if the choice index is the selectedIndex state variable.
     const [choiceObjects, setChoiceObjects] = useState(() =>
         choices.map((choice) => ({
             text: choice,
@@ -26,8 +22,6 @@ const Question = ({ question, id, setNumSubmitted, setNumCorrect }) => {
 
     const handleChoiceSelect = (choiceIndex) => {
         if (isSubmitted) return
-
-        // console.log('selected')
 
         setSelectedChoiceIndex(choiceIndex)
         setIsSelected(true)
@@ -43,7 +37,6 @@ const Question = ({ question, id, setNumSubmitted, setNumCorrect }) => {
     }
 
     const handleAnswerSubmit = (e) => {
-        // don't allow submitting more than once
         if (isSubmitted) return
 
         setIsSubmitted(true)
@@ -129,8 +122,6 @@ const Question = ({ question, id, setNumSubmitted, setNumCorrect }) => {
                     onClick={() => handleChoiceSelect(index)}
                 >
                     <pre className=' whitespace-pre-wrap'>
-                        {/* <code>{choice.text}</code> */}
-                        {/* <code className=' bg-opacity-0 '>{choice.text}</code> */}
                         <code
                             className='rounded'
                             style={{
@@ -149,8 +140,6 @@ const Question = ({ question, id, setNumSubmitted, setNumCorrect }) => {
     }
 
     useEffect(() => {
-        // Probably not a good way to do this.
-        // Maybe each choice should be it's own component at this point.
         setChoiceObjects(
             choices.map((choice) => ({
                 text: choice,

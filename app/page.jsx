@@ -68,7 +68,7 @@ const HomePage = () => {
                                 <option value='python'>Python</option>
                                 <option value='react'>React</option>
                                 <option value='css'>CSS</option>
-                                <option value='sinhala'>Sinhala</option>
+                                <option value='javascript'>Javascript</option>
                             </select>
                         </div>
 
@@ -135,7 +135,7 @@ const HomePage = () => {
                                 }
                                 className='quiz-select'
                             >
-                                <option value='5'>5</option>
+                                <option value='3'>3</option>
                                 <option value='10'>10</option>
                                 <option value='15'>15</option>
                                 <option value='20'>20</option>

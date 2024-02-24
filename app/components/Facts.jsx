@@ -22,10 +22,9 @@ const Facts = () => {
             </p>
             <button
                 onClick={() => setFact(pickRandom(facts))}
-                className='px-4 py-2 mt-12 text-emerald-300 border border-emerald-300 rounded flex items-center gap-2 group hover:bg-emerald-300/40 hover:text-white active:bg-emerald-600'
+                className='px-4 py-2 mt-12 text-violet-300 border border-violet-300 rounded flex items-center gap-2 group hover:bg-violet-300/40 hover:text-white active:bg-violet-600'
             >
                 Next Fact
-                {/* <HiChevronRight className='group-hover:translate-x-2 transition-all ' /> */}
                 <HiChevronRight className='' />
             </button>
         </div>
