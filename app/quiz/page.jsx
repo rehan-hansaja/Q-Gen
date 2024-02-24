@@ -67,9 +67,7 @@ const QuizPage = () => {
                 }
 
                 const data = response.body
-                // console.log('data', data)
                 if (!data) {
-                    // console.log('no data')
                     return
                 }
 
@@ -93,15 +91,6 @@ const QuizPage = () => {
                     setResponseStream((prev) => prev + chunkValue)
                 }
 
-                // first way (working)
-                // const text = await response.text()
-                // const quiz = JSON.parse(text).questions
-                // setQuiz(quiz)
-
-                // second way (working)
-                // const answer = await response.json()
-                // setQuiz(answer.questions)
-
                 // streaming way
                 let cleanedResponse = responseText.replace(/\n/g, '')
                 let jsonResponse = JSON.parse(cleanedResponse)
@@ -111,7 +100,6 @@ const QuizPage = () => {
                 console.log('Quiz Page:', err)
             } finally {
                 setIsLoading(false)
-                // console.log('done loading')
             }
         }
         generateQuestions()

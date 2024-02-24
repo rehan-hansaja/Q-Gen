@@ -2,26 +2,12 @@
 
 import { useState } from 'react'
 import { facts, jokes } from '../constants/facts'
-
 import { useTypewriter, Typewriter } from 'react-simple-typewriter'
-
 import { HiChevronRight } from 'react-icons/hi2'
-
 import { pickRandom } from '../utils'
-
-// const pickRandom = (arr) => {
-//     return arr[Math.floor(Math.random() * arr.length)]
-// }
 
 const Facts = () => {
     const [fact, setFact] = useState(pickRandom(facts))
-
-    // const [text] = useTypewriter({
-    //     words: [fact],
-    //     loop: false,
-    //     typeSpeed: 40,
-    //     deleteSpeed: 10000000
-    // })
 
     return (
         <div className='flex flex-col items-center text-center mt-8'>

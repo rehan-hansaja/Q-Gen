@@ -1,20 +1,11 @@
 'use client'
 
 import { useState } from 'react'
-
 import { topics } from './constants/topics'
-
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
-import AudioPlayer from './components/AudioPlayer'
-
-import { FiGithub } from 'react-icons/fi'
-
 const HomePage = () => {
-    // const [topicOptions, setTopicOptions] = useState(topics.python.beginner)
-
-    // const router = useRouter()
 
     const [language, setLanguage] = useState('css')
     const [difficulty, setDifficulty] = useState('Beginner')
@@ -29,10 +20,7 @@ const HomePage = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-
         console.log(language, difficulty, topic)
-
-        // router.push('/quiz')
     }
 
     // bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent
@@ -43,13 +31,13 @@ const HomePage = () => {
                 <h1 className='text-center text-5xl md:text-7xl font-bold bg-gradient-to-r from-emerald-500 via-pink-400 to-blue-500 bg-clip-text text-transparent q-animate-gradient'>
                     
                 </h1>
-                <h1 className='text-center text-5xl md:text-7xl font-bold text-green-500'>
+                <h1 className='text-center text-5xl md:text-7xl font-bold text-violet-500'>
                     Q-GEN 
                 </h1>
-                <h1 className='text-center text-5xl md:text-6xl font-bold text-green-500'>
+                <h1 className='text-center text-5xl md:text-6xl font-bold text-violet-500'>
                     MCQ Quiz Generator
                 </h1>
-                <h4 className='text-center text-4xl md:text-4xl font-bold text-green-700'>
+                <h4 className='text-center text-4xl md:text-3.5xl font-bold text-white-700'>
                     for IT students
                 </h4>
 
@@ -179,7 +167,6 @@ const HomePage = () => {
     href='https://github.com/rehan-hansaja/Q-Gen'
     target='_blank'
 >
-    <FiGithub size={16} />
     Built by TEAM INVICTUS
 </a> */}
 

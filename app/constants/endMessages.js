@@ -5,11 +5,8 @@ export const endMessages = {
         'Bravo! Your ability to make the rest of us feel intellectually inferior is truly remarkable.',
         'Impressive job on acing the quiz! I bet you have a secret hotline to the quiz gods.',
         'Oh, please enlighten us with your genius as you effortlessly breeze through yet another quiz.',
-        "Look at you, getting all the answers right. It's almost like you're cheating... with your brain!",
-        'Your quiz performance is the stuff of legends. I mean, who needs a social life when you can study all day?',
         "Congratulations on your perfect score! I'll just be over here questioning the purpose of my existence.",
-        "You're like a human Google, except without the annoying ads. Can I hire you for my next quiz?",
-    ],
+        ],
     good: [
         'Almost acing the quiz is like almost winning the lottery, it still counts for nothing.',
         "Good job on your almost-perfect quiz score. It's a real accomplishment... for someone who's not you.",
@@ -24,12 +21,7 @@ export const endMessages = {
     ],
     bad: [
         'Impressive display of quiz mediocrity. Keep aiming for the stars!',
-        "If effort was a grade, you'd be top of the class! Unfortunately, it's not, so...",
-        "Good job on giving the wrong answers with such confidence! You're a true quiz maverick!",
-        'Bravo! Your quiz performance was a masterpiece of creative guesswork.',
         'Well, your quiz results are a shining example of what not to do if you want to succeed in life.',
-        "I'm in awe of your ability to consistently choose the wrong answers. It's like a talent!",
         'Who needs correct answers when you can effortlessly achieve a perfect score in misunderstanding?',
-        "Your quiz performance has left me speechless. I didn't know it was possible to be so consistently wrong.",
     ],
 }

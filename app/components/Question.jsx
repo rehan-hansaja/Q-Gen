@@ -1,14 +1,5 @@
 import { useEffect, useState } from 'react'
-
 import { HiCheck, HiOutlineXMark } from 'react-icons/hi2'
-
-// Question Format
-// {
-//     query: 'What is JS?',
-//     choices: ['A', 'B', 'C', 'D'],
-//     answer: '0',
-//     explanation: 'Explanation',
-// }
 
 const Question = ({ question, id, setNumSubmitted, setNumCorrect }) => {
     // const Question = ({ question, choices, explanation, answer }: QuestionProps) => {
