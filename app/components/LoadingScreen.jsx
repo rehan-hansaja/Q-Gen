@@ -1,22 +1,9 @@
-import Facts from './Facts'
-
+import Facts from './Tips'
 import { Bars } from 'react-loader-spinner'
 
 const LoadingScreen = ({ responseStream }) => {
     return (
         <>
-            <div className=' text-white/10 text-xs text-justify'>
-                <div className='fixed'>{responseStream}</div>
-                <div className='fixed bottom-0 rotate-180 left-0'>
-                    {responseStream}
-                </div>
-                <div className='fixed bottom-0 right-0 reverse-text'>
-                    {responseStream}
-                </div>
-                <div className='fixed bottom-0 left-0 reverse-text rotate-180'>
-                    {responseStream}
-                </div>
-            </div>
             <div className='min-h-screen grid place-items-center'>
                 <div className='w-[80%] flex flex-col items-center'>
                     <div className='flex items-center gap-4'>
