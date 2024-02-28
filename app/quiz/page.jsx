@@ -1,14 +1,10 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-
 import { useSearchParams, useRouter } from 'next/navigation'
-
 import { motion, useSpring } from 'framer-motion'
-
 import LoadingScreen from '../components/LoadingScreen'
 import Question from '../components/Question'
-
 import 'highlight.js/styles/atom-one-dark.css'
 import hljs from 'highlight.js'
 
@@ -58,8 +54,6 @@ const QuizPage = () => {
                     }),
                 })
 
-                // console.log(response) // Readable Stream
-
                 if (!response.ok) {
                     throw new Error('Failed to fetch data', response.statusText)
                 }
@@ -75,11 +69,7 @@ const QuizPage = () => {
                 let done = false
 
                 while (!done) {
-                    // console.log('not done')
-
                     const { value, done: doneReading } = await reader.read()
-
-                    // console.log('doneReading', doneReading)
 
                     done = doneReading
                     const chunkValue = decoder.decode(value)
@@ -125,10 +115,6 @@ const QuizPage = () => {
 
     return (
         <div>
-            {/* <div className='fixed right-0 p-4'>
-                <div>Submitted: {numSubmitted}</div>
-                <div>Correct: {numCorrect}</div>
-            </div> */}
 
             <motion.div className='progress-bar' style={{ scaleX }} />
             {isLoading ? (
@@ -138,7 +124,6 @@ const QuizPage = () => {
             ) : (
                 <div className='pt-12'>
                     {quiz?.map((question, index) => (
-                        // <div>{question.query}</div>
                         <div className='mb-12' key={index}>
                             <Question
                                 question={question}
