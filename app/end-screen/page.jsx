@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { pickRandom } from '../utils'
 import { endMessages } from '../constants/endMessages'
-import { useSpeech } from 'react-use'
 import useWindowSize from 'react-use/lib/useWindowSize'
 import Confetti from 'react-confetti'
 import { gifs } from '../constants/gifs'
@@ -45,9 +44,6 @@ const EndScreen = () => {
 
     return (
         <div className='min-h-screen grid place-items-center '>
-            {/* <Voice message={message} /> */}
-            {/* <pre>{JSON.stringify(state, null, 2)}</pre> */}
-
 
             {score >= 0.8 && <Confetti width={width} height={height} className='overflow-hidden'/>}
 
@@ -57,7 +53,6 @@ const EndScreen = () => {
                     src={gif}
                     width='480'
                     height='269'
-                    // frameBorder='0'
                     className='giphy-embed mt-16'
                     allowFullScreen
                 ></iframe>
@@ -65,7 +60,6 @@ const EndScreen = () => {
                 <p className='text-3xl mt-12 text-center'>{message}</p>
 
                 <button
-                    // className='border border-white px-6 py-3 rounded mt-12 text-lg'
                     className='inline-block border-2 border-violet-400 rounded text-violet-400 text-center uppercase text-lg font-semibold mx-auto mt-8 px-6 py-2 hover:bg-violet-400/40 hover:border-violet-400 hover:text-white duration-75 active:bg-violet-600'
                     onClick={handlePlayAgain}
                 >
