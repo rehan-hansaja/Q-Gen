@@ -23,8 +23,6 @@ const HomePage = () => {
         console.log(language, difficulty, topic)
     }
 
-    // bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent
-
     return (
         <div className='min-h-screen grid place-items-center'>
             <div className='border rounded border-white/0 '>
@@ -34,11 +32,13 @@ const HomePage = () => {
                 <h1 className='text-center text-5xl md:text-7xl font-bold text-violet-500'>
                     Q-GEN 
                 </h1>
-                <h1 className='text-center text-5xl md:text-6xl font-bold text-violet-500'>
-                    MCQ Quiz Generator
+                <h1 className='text-center text-5xl md:text-5xl font-bold text-violet-500'>
+                    {/* MCQ Quiz Generator */}
+                    Generate Your Quiz
                 </h1>
-                <h4 className='text-center text-4xl md:text-3.5xl font-bold text-white-700'>
-                    for IT students
+                <h4 className='text-center text-2xl md:text-2xl font-bold text-white-700'>
+                    {/* for IT students */}
+                    Dive into the World of Tech 
                 </h4>
 
 
@@ -56,7 +56,7 @@ const HomePage = () => {
                                 htmlFor='language'
                                 className='uppercase text-xs'
                             >
-                                Language
+                                Topic
                             </label>
                             <select
                                 value={language}
@@ -78,7 +78,7 @@ const HomePage = () => {
                                 htmlFor='topic'
                                 className='uppercase text-xs'
                             >
-                                Topic
+                                Sub Topic
                             </label>
                             <select
                                 value={topic}
@@ -111,11 +111,11 @@ const HomePage = () => {
                                 onChange={(e) => setDifficulty(e.target.value)}
                                 className='quiz-select'
                             >
-                                <option value='beginner'>Beginner</option>
+                                <option value='beginner'>Easy</option>
                                 <option value='intermediate'>
-                                    Intermediate
+                                    Medium
                                 </option>
-                                <option value='advanced'>Advanced</option>
+                                <option value='advanced'>Hard</option>
                             </select>
                         </div>
 
@@ -135,7 +135,7 @@ const HomePage = () => {
                                 }
                                 className='quiz-select'
                             >
-                                <option value='3'>3</option>
+                                <option value='5'>5</option>
                                 <option value='10'>10</option>
                                 <option value='15'>15</option>
                                 <option value='20'>20</option>
