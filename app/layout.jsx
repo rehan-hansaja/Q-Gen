@@ -3,7 +3,6 @@
 import './globals.css'
 import { Inter, Poppins, Lato } from 'next/font/google'
 
-
 const poppins = Poppins({ subsets: ['latin'], weight: '400' })
 const inter = Inter({ subsets: ['latin'] })
 const lato = Lato({ subsets: ['latin'], weight: '400' })
@@ -15,7 +14,7 @@ export default function RootLayout({ children }) {
         <html lang='en'>
             <head>
                 <title>Q-GEN MCQ Quiz Generator</title>
-                <link rel="icon" href="my-favicon-32x32.png" type="image/x-icon"></link>
+                <link rel="icon" href="Logo.png" type="image/x-icon"></link>
             </head>
             <body className={`${poppins.className} relative`}>
                 <div className='bg-grid'>
