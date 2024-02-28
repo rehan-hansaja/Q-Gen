@@ -174,7 +174,7 @@ const Question = ({ question, id, setNumSubmitted, setNumCorrect }) => {
                 </div>
                 {((isSubmitted && isCorrect()) || isExplained) && (
                     <div className='mt-2 p-4 rounded bg-stone-700/50'>
-                        <h3 className='text-emerald-300/60 text-sm font-bold'>
+                        <h3 className='text-violet-400/60 text-sm font-bold'>
                             Explanation
                         </h3>
                         <p className='mt-2 text-sm font-light'>{explanation}</p>
