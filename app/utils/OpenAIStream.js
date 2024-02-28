@@ -26,7 +26,6 @@ export async function OpenAIStream(payload) {
                     const data = event.data
 
                     if (data === '[DONE]') {
-						// console.log('data done controller closing')
 
                         controller.close() // ends the stream
                         return
@@ -34,9 +33,7 @@ export async function OpenAIStream(payload) {
                     try {
                         const json = JSON.parse(data)
                         const text = json.choices[0].delta.content // get actual text token from chunk
-                        // if (counter < 2 && (text.match(/\n/) || []).length) {
-                        //     return
-                        // }
+                        
                         const queue = encoder.encode(text) // encode string into binary Uint8Array
                         controller.enqueue(queue) // enqueue into the controller, making it available to consumers of the stream.
 
