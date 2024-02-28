@@ -74,7 +74,7 @@ body {
     left: 0;
     right: 0;
     height: 10px;
-    background: #6ee7b7d9;
+    background: purple;
     transform-origin: 0%;
 }
 
@@ -121,7 +121,3 @@ option {
     }
 }
 
-.reverse-text {
-    direction: rtl;
-    writing-mode: vertical-rl;
-}
