@@ -7,9 +7,9 @@ import Link from 'next/link'
 
 const HomePage = () => {
 
-    const [language, setLanguage] = useState('css')
+    const [language, setLanguage] = useState('programming')
     const [difficulty, setDifficulty] = useState('Beginner')
-    const [topic, setTopic] = useState('Random')
+    const [topic, setTopic] = useState('Java')
     const [numQuestions, setNumQuestions] = useState('5')
 
     const handleSetQuestions = (e) => {}
@@ -64,11 +64,13 @@ const HomePage = () => {
                                 name='language'
                                 className='quiz-select'
                             >
-                                <option value='mathematics'>Mathematics</option>
-                                <option value='python'>Python</option>
-                                <option value='react'>React</option>
-                                <option value='css'>CSS</option>
-                                <option value='javascript'>Javascript</option>
+                                <option value='programming'>Programming</option>
+                                <option value='web'>Web Development</option>
+                                <option value='database'>Database Management</option>
+                                <option value='networking'>Networking</option>
+                                <option value='sdlc'>Development Methodologies</option>
+                                <option value='cloud'>Cloud Computing</option>
+                                <option value='ml'>Machine Learning</option>
                             </select>
                         </div>
 
