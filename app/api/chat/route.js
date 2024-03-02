@@ -1,7 +1,3 @@
-// used in final version
-// 
-// gpt-3-turbo via http API
-
 import { OpenAIStream } from '../../utils/OpenAIStream'
 
 if (!process.env.OPENAI_API_KEY) {
