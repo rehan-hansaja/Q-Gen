@@ -15,7 +15,7 @@ A MCQ quiz generator web app using generative AI to improve studies by providing
 
 ## Screenshots 
 
-![Screenshot (274)](https://github.com/rehan-hansaja/Q-Gen/assets/138307240/2f1df759-106a-4fde-b205-1d5b347af066)
+![Screenshot (285)](https://github.com/rehan-hansaja/Q-Gen/assets/138307240/6a9a5277-a324-406b-9570-a529fd5b1551)
 
 ![Screenshot (280)](https://github.com/rehan-hansaja/Q-Gen/assets/138307240/afceed68-c8f0-43a5-8828-57a2bcd09c95)
 
