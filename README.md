@@ -45,3 +45,15 @@ The API is queried. After playing with the available parameters, I found leaving
 ![api request](./docs/images/api-request.jpg)
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+Here are some screenshots of the web app. 
+
+![Screenshot (274)](https://github.com/rehan-hansaja/Q-Gen/assets/138307240/2f1df759-106a-4fde-b205-1d5b347af066)
+
+![Screenshot (276)](https://github.com/rehan-hansaja/Q-Gen/assets/138307240/4676670d-892d-4ac0-99b9-2f194c54e424)
+
+![Screenshot (277)](https://github.com/rehan-hansaja/Q-Gen/assets/138307240/04e4b1a2-ae98-49ad-aba2-ae9ac07def22)
+
+![Screenshot (279)](https://github.com/rehan-hansaja/Q-Gen/assets/138307240/27124a6b-d55d-49fa-8faf-11afe0835820)
+
+
