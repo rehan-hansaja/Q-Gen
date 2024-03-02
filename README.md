@@ -1,5 +1,5 @@
-# To Play the Quiz : https://qgen-lime.vercel.app/
-# Q-GEN MCQ Quiz Generator
+## To Play the Quiz : https://qgen-lime.vercel.app/
+## Q-GEN MCQ Quiz Generator
 A MCQ quiz generator web app using generative AI to improve studies by providing an interesting play & learn platform for the students. The current version was created based on the learning areas of IT, while the future aspect is to expand the web app for more subjects.
 
 ## Features
